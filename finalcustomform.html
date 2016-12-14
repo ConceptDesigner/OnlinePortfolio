@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--
+ Filename: finalcustomform.html
+ Written by: James Lewis (JL)
+ Purpose: Demonstrate Web Design, Graphic Design and Web Developing skills
+ Date: 02 May 2016
+ Modification History: No Modifications
+ Original Build
+-->
+
+<html>
+
+<head>
+
+  <title>Vice Versa Form</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="finalcss/finalmystyles.css" />
+  <link rel="stylesheet" type="text/css" href="finalcss/finalcustomstyle.css">
+  <link href="theme/jquery-ui.css" rel="stylesheet">
+</head>
+
+<body id="container2">
+  <div id="wrap">
+  <div id="myHeader2">
+    <h3>This is a Custom Form with Validation. Using the jQuery User Interface <strong>This is only a Demonstration</strong></h3>
+  </div>
+  <form method="get" id="myForm">
+    <fieldset id=" fieldWidth">
+      <h4 class="bodyText">Welcome to Vice Versa Development and Designs. Please fill out application and submit to proceed.</h4>
+      <hr>
+      <h2 class="demoHeaders">More information about the company:</h2>
+      <div id="accordion">
+        <h3>Development</h3>
+        <div>Here at Vice Versa our staff is committed to excellence for all of our clients. You can assure that all projects will be allocated accordingly. For example;
+          <ul>
+            <li>When it comes to development, our employees are actually the top performing students in there field.
+            </li>
+            <li>This provides excellence for all project handled.
+            </li>
+            <li>All work is then checked and approved by senior developers assuring that projects are completed on time and professionally at all times.</li>
+          </ul>
+        </div>
+        <h3>Design</h3>
+        <div>When it comes to the fashion of development and Programming, we have got you covered.
+          <ul>
+            <li>With development being the skeletal structure and function of design, this makes an interface do different thing but sort of black and white.
+            </li>
+            <li>Our design team is the skin and clothing of our development. They are the fashion designers of development and programming.
+            </li>
+            <li>Here at Vice Versa we have the most passionate designers who take pride in the work that they do. Ours designers treat your work as if it were their own.
+            </li>
+          </ul>
+        </div>
+        <h3>Dedication</h3>
+        <div>We are dedicated to you!
+          <ul>
+            <li>After filling out our simple application you will be contacted by one of our marketing professionals.</li>
+            <li>We will then schedule a face to face interview to introduce ourselves and to obtain specific details about your request.</li>
+            <li>You will meet you developer and designer via in person or webchat to until completion of the request.</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <h2 class="bodyText">Please fill out required information</h2>
+      <label for="firstName" class="bodyText">First Name:</label>
+      <input id="firstName" name="firstName" type="text" placeholder="type here..." autofocus required>
+      <br/>
+      <br/>
+      <br/>
+      <label for="lastName" class="bodyText">Last Name:</label>
+      <input id="lastName" name="lastName" type="text" placeholder="type here..." required>
+      <br/>
+      <br/>
+      <br/>
+      <label for="streetAddress" class="bodyText">Address:</label>
+      <input id="streetAddress" name="streetAddress" type="text" placeholder="type here..." required>
+      <br/>
+      <br/>
+      <br/>
+      <label for="phoneNumber" class="bodyText">Phone:</label>
+      <input id="phoneNumber" name="phoneNumber" type="tel" placeholder="type here..." required>
+      <br/>
+      <br/>
+      <br/>
+      <label for="emailAddress" class="bodyText">Email:</label>
+      <input id="emailAddress" name="emailAddress" type="email" placeholder="eg: someone@yahoo.com..." required>
+      <br/>
+      <br>
+      <br>
+      <div class="ui-widget">
+        <label for="password" class="bodyText">Password:</label>
+        <input id="password" name="password" type="text" placeholder="type here..." required>
+      </div>
+      <hr>
+      <h3>Security Question:</h3>
+      <p class="bodyText"><strong>What state do you currently live in?</strong></p>
+      <label for="autocomplete" class="bodyText">Answer:</label>
+      <input id="autocomplete" name="autocomplete" type="text" placeholder="type here..." required>
+      <hr>
+      <h2 class="demoHeaders">Availability:</h2>
+      <p class="bodyText">What day would you have the most free time to sit with one of our representatives?</p>
+      <p class="bodyText">Insert Date:
+        <input type="text" id="datepicker" required>
+      </p>
+      <h3 class="demoHeaders">Hours available for meeting via face to face or video?</h3>
+      <label for="spinner" class="bodyText"># of hours:</label>
+      <input id="spinner" name="value">
+      <hr>
+      <h2 class="demoHeaders">Please Decribe Project</h2>
+      <div>
+        <textarea id="userTextArea" rows="6" cols="75" required></textarea>
+      </div>
+      <br>
+      <hr>
+      <h3 class="demoHeaders"> Please check the following that applys to project.</h3>
+
+      <input type="radio" name="profession" value="Development" checked> <font color="black">Development</font>
+      <br>
+      <input type="radio" name="profession" value="Design"> <font color="black">Design</font>
+      <br>
+      <input type="radio" name="profession" value="Both"> <font color="black">Both</font>
+      <br>
+      <input type="radio" name="profession" value="Other"> <font color="black">Other</font>
+      <br>
+      <hr>
+      <p>
+        <button id="submit" type="submit" value="submit">Submit Form</button>
+        <button id="reset" type="reset">Reset</button>
+      </p>
+      <hr>
+      <h2 class="bodyText">Summary of Application</h2>
+      <div id="content" class="bodyText">
+        First Name: <span id="outputFirstName"></span>
+        <br/>
+        <br/> Last Name: <span id="outputLastName"></span>
+        <br/>
+        <br/> Address: <span id="outputAddress"></span>
+        <br/>
+        <br/> Phone: <span id="outputPhone"></span>
+        <br/>
+        <br/> Email: <span id="outputEmailAddress"></span>
+        <br/>
+        <br/> Password: <span id="outputPassword"></span>
+        <br/>
+        <br/> Security Answer: <span id="outputAnswer"></span>
+        <br/>
+        <br/> Date Available: <span id="outputDate"></span>
+        <br/>
+        <br/> Hours Available: <span id="outputHours"></span>
+        <br/>
+        <br/> Brief Project Description: <span id="outputProjectDes"></span>
+        <br/>
+        <br/> Profession for Project: <span id="outputProfession"></span>
+      </div>
+
+    </fieldset>
+  </form>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="validation/dist/jquery.validate.js"></script>
+  <script type="text/javascript" src="theme/jquery-ui.js"></script>
+  <script type="text/javascript" src="finaljs/custommain.js"></script>
+  <script type="text/javascript" src="finaljs/customthemain.js"></script>
+</div>
+</body>
+
+</html>

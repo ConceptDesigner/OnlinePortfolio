@@ -1,0 +1,29 @@
+#theDiv{
+	position:relative;
+	border: 1px solid gray;
+	background: #b37700;
+	font-size:14pt;
+	margin: 10px;
+	padding: 20px;
+	height: 50px;
+	width:150px;
+	cursor: pointer;
+	border-radius: 50px;
+}
+
+#myField{
+	background: #66ccff;
+	height: 300px;
+	width: 700px;
+	float: right;
+}
+
+.theField{
+	background: #e0ebeb;
+	width: 300px;
+	float: left;
+}
+
+button{
+	margin: 5pt 5pt 0 0;
+}

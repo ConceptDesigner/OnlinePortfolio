@@ -1,0 +1,99 @@
+#wrap {
+  width: 1000px; 
+  margin: 0 auto;
+}
+
+#leftBox {
+    width: 380px;
+    height: 300px;
+    background-color: black;
+    float: left;
+    padding-left: 40px;
+}
+
+#rightBox {
+    width: 580px;
+    height: 300px;
+    background-color: black;
+    float: left;
+
+}
+
+#myHeader {
+
+
+    width: 1000px;
+    height: 100px;
+    background-color: #66ccff;
+    
+}
+
+#myHeader2 {
+
+
+    width: 1000px;
+    height: 100px;
+    background-color: #66ccff;
+    float: left;
+}
+
+#myFooter {
+    margin-bottom: 10px;
+
+    width: 1000px;
+    height: 50px;
+    background-color: #66ccff;
+    float: left;
+}
+
+
+
+#container {
+
+    width: 1000px;
+    margin-left: 100px;
+    margin right: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+    background-color: gray;
+}
+
+
+h1 {
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 25px;
+    font-size: 36px;
+    float: left;
+    color: black;
+}
+
+h3 {
+    text-align: center;
+    padding-left: 40px;
+
+
+}
+
+.myButtons {
+    padding-top: 68px;
+    padding-left: 60px;
+    padding-right: 60px;
+    float: left;
+}
+
+#para1 {
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+.bodyText {
+    color: black;
+}
+
+#myField {
+    background-color: black;
+
+}
