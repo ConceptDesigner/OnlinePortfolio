@@ -9,8 +9,8 @@ body {
   background-color: gray;
   height: 768px;
   margin:0 auto;
-  
 }
+
 #leftBox {
   width: 1366px;
   background-color: black;
@@ -44,6 +44,7 @@ body {
   background-color: white;
   float: left;
 }
+
 #headerLogo {
   padding-left: 150px;
   padding-right: 110px;
@@ -57,7 +58,6 @@ h3 {
 #secondNav {
   padding-left: 575px;
   width: 600px;
-  
 }
 
 p {
@@ -75,6 +75,7 @@ p {
   padding-top: 20px;
   padding-left: 150px;
 }
+
 #myLewis {
   float: left;
   padding-top: 20px;
